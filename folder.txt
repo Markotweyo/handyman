@@ -1,0 +1,19 @@
+src/
+├── config/
+│   └── supabaseClient.js       // Supabase connection
+├── controllers/
+│   ├── authController.js       // Auth logic
+│   └── serviceController.js    // Service logic
+├── middleware/
+│   ├── authMiddleware.js       // Auth check for protected routes
+│   └── errorHandler.js         // Central error handler
+├── models/
+│   └── Service.js               // Service Model (schema definition)
+├── routes/
+│   ├── authRoutes.js           // Auth endpoints
+│   └── serviceRoutes.js        // Service endpoints
+├── services/
+│   ├── authService.js          // Calls to Supabase Auth
+│   └── serviceService.js       // Calls to Supabase DB (services table)
+├── app.js                       // App setup
+├── server.js                    // Server startup
